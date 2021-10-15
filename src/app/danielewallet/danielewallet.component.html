@@ -1,0 +1,10 @@
+<h2>Carteira</h2>
+<h3>Compra e venda</h3>
+R$<input #brl type="number" step="0.01" value="100.00" />
+<button (click)="danielewallet.addBitCoins(+brl.value)">+</button>
+<button (click)="danielewallet.addBitCoins(-brl.value)">-</button>
+<hr />
+<h4>Saldo: {{ danielewallet.bitCoins }} BTC</h4>
+<h5>{{ danielewallet.getBtcInBRL() }} BRL</h5>
+<h5>{{ danielewallet.getBtcInUSD() }} USD</h5>
+<h5>{{ danielewallet.getBtcInEUR() }} EUR</h5>

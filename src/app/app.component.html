@@ -1,0 +1,13 @@
+<h1>DanieleApp</h1>
+<a [routerLink]="['/danielecurrency']">Cotações</a> |
+<a [routerLink]="['/danielewallet']">Carteira</a> |
+<span *ngIf="danielewallet.diff > 0" style="color:green">⇈</span>
+<span *ngIf="danielewallet.diff < 0" style="color:red">⇊</span>
+<hr />
+
+<router-outlet></router-outlet>
+
+<hr />
+<p>Daniele Costa</p>
+<p>RA: *******</p>
+<a href="https://github.com/costadaniele">Github</a>
